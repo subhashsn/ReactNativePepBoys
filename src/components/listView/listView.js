@@ -6,18 +6,18 @@ const ListView = () => {
    
    state = {
     names: [
-       {'name': 'Ben', 'id': 1},
-       {'name': 'Susan', 'id': 2},
-       {'name': 'Robert', 'id': 3},
-       {'name': 'Mary', 'id': 4},
-       {'name': 'Daniel', 'id': 5},
-       {'name': 'Laura', 'id': 6},
-       {'name': 'John', 'id': 7},
-       {'name': 'Debra', 'id': 8},
-       {'name': 'Aron', 'id': 9},
-       {'name': 'Ann', 'id': 10},
-       {'name': 'Steve', 'id': 11},
-       {'name': 'Olivia', 'id': 12}
+       {'name': 'Ben', 'id': 1, 'img':'./pepboys1.png'},
+       {'name': 'Susan', 'id': 2, 'img':'./pepboys1.png'},
+       {'name': 'Robert', 'id': 3, 'img':'./pepboys1.png'},
+       {'name': 'Mary', 'id': 4, 'img':'./pepboys1.png'},
+       {'name': 'Daniel', 'id': 5, 'img':'./pepboys1.png'},
+       {'name': 'Laura', 'id': 6, 'img':'./pepboys1.png'},
+       {'name': 'John', 'id': 7, 'img':'./pepboys1.png'},
+       {'name': 'Debra', 'id': 8, 'img':'./pepboys1.png'},
+       {'name': 'Aron', 'id': 9, 'img':'./pepboys1.png'},
+       {'name': 'Ann', 'id': 10, 'img':'./pepboys1.png'},
+       {'name': 'Steve', 'id': 11, 'img':'./pepboys1.png'},
+       {'name': 'Olivia', 'id': 12, 'img':'./pepboys1.png'}
     ]
  }
 
@@ -27,11 +27,11 @@ const ListView = () => {
                 {  
                   this.state.names.map((item, index) => (
                      <View key = {item.id} style = {[style.item,style.child]}>
-                        <Text>{item.name}</Text>
                         <Image
-                            source = {require('./pepboys1.png')}
+                            source = {require('../../../assets/app/pepboys1.png')}
                             style={{ width: 125, height: 125, marginLeft: 5}}
                         />
+                        <Text>{item.name}</Text>
                      </View>
                   ))
                }
@@ -55,7 +55,7 @@ const style = StyleSheet.create({
         aspectRatio: 1,
     },
     item: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: 3,
