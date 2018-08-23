@@ -6,18 +6,18 @@ const ListView = () => {
    
    state = {
     names: [
-       {'name': 'Ben', 'id': 1, 'img':'./pepboys1.png'},
-       {'name': 'Susan', 'id': 2, 'img':'./pepboys1.png'},
-       {'name': 'Robert', 'id': 3, 'img':'./pepboys1.png'},
-       {'name': 'Mary', 'id': 4, 'img':'./pepboys1.png'},
-       {'name': 'Daniel', 'id': 5, 'img':'./pepboys1.png'},
-       {'name': 'Laura', 'id': 6, 'img':'./pepboys1.png'},
-       {'name': 'John', 'id': 7, 'img':'./pepboys1.png'},
-       {'name': 'Debra', 'id': 8, 'img':'./pepboys1.png'},
-       {'name': 'Aron', 'id': 9, 'img':'./pepboys1.png'},
-       {'name': 'Ann', 'id': 10, 'img':'./pepboys1.png'},
-       {'name': 'Steve', 'id': 11, 'img':'./pepboys1.png'},
-       {'name': 'Olivia', 'id': 12, 'img':'./pepboys1.png'}
+       {'name': 'Ben', 'id': 1, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Susan', 'id': 2, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Robert', 'id': 3, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Mary', 'id': 4, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Daniel', 'id': 5, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Laura', 'id': 6, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'John', 'id': 7, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Debra', 'id': 8, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Aron', 'id': 9, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Ann', 'id': 10, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Steve', 'id': 11, 'img':'../../../assets/app/pepboys1.png'},
+       {'name': 'Olivia', 'id': 12, 'img':'../../../assets/app/pepboys1.png'}
     ]
  }
 
@@ -27,10 +27,7 @@ const ListView = () => {
                 {  
                   this.state.names.map((item, index) => (
                      <View key = {item.id} style = {[style.item,style.child]}>
-                        <Image
-                            source = {require('../../../assets/app/pepboys1.png')}
-                            style={{ width: 125, height: 125, marginLeft: 5}}
-                        />
+                        <Image source = {require('../../../assets/app/pepboys1.png')} style={{ width: 125, height: 125, marginLeft: 5}}/>
                         <Text>{item.name}</Text>
                      </View>
                   ))
@@ -40,6 +37,9 @@ const ListView = () => {
    )
 }
 
+//<Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}} />
+
+//<Image source = {require('../../../assets/app/pepboys1.png')} style={{ width: 125, height: 125, marginLeft: 5}}/>
 export default ListView
 
 const style = StyleSheet.create({

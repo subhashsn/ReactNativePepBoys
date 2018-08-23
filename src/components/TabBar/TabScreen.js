@@ -1,9 +1,8 @@
 import React from 'react';
 import {TabNavigator} from 'react-navigation';
 
-import First from './First'
-import Second from './Second'
-import Third from './Third'
+import First from '../../tabScreens/AutoParts'
+import Second from '../../tabScreens/TopBrands'
 
 export const Tab =  TabNavigator({
     First:{
@@ -11,10 +10,7 @@ export const Tab =  TabNavigator({
     },
     Second:{
         screen: Second,
-    },
-    Third:{
-        screen: Third,
-    },
+    }
 },
 {
     tabBarPosition: 'top',
