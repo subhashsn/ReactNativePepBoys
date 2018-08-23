@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import { ScrollView, Text, StyleSheet,View } from 'react-native';
-import ListView from '../components/listView/listView.js'
+import { Text, View } from 'react-native';
 
 export default class First extends Component {
+  static navigationOptions = {
+    tabBarLabel: 'TopBrands'
+  };
   render() {
     return (
       <View>

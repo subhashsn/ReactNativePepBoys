@@ -15,10 +15,13 @@ export const Tab =  TabNavigator({
 {
     tabBarPosition: 'top',
     swipeEnabled: true,
+    animationEnabled: true,
     tabBarOptions: {
-        activeTintColor: '#f2f2f2',
-        activeBackgroundColor: '#2EC4B6',
-        inactiveTintColor: '#666',
+        activeTintColor: '#ff0000',
+        activeBackgroundColor: '#ffffff',
+        inactiveTintColor: '#000',
+        showLabel: true,
+		showIcon: true,
         labelStyle: {
             fontSize: 12,
             padding: 5

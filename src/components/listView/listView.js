@@ -52,7 +52,8 @@ const style = StyleSheet.create({
     child: {
         width: '48%', 
         margin: '1%', 
-        aspectRatio: 1,
+        aspectRatio: 1
+        
     },
     item: {
         flexDirection: 'column',
@@ -60,9 +61,9 @@ const style = StyleSheet.create({
         alignItems: 'center',
         padding: 3,
         margin: 2,
-        borderColor: '#2a4944',
+        borderColor: '#ffffff',
         borderWidth: 1,
-        backgroundColor: '#d2f7f1'
+        backgroundColor: '#ffffff'
      }
   
   });
