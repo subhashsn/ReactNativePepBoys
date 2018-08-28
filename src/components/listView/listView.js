@@ -5,21 +5,27 @@ import { Actions } from 'react-native-router-flux';
 const ListView = () => {
    
    state = {
-    names: [
-       {'name': 'Ben', 'id': 1, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Susan', 'id': 2, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Robert', 'id': 3, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Mary', 'id': 4, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Daniel', 'id': 5, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Laura', 'id': 6, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'John', 'id': 7, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Debra', 'id': 8, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Aron', 'id': 9, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Ann', 'id': 10, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Steve', 'id': 11, 'img':'../../../assets/app/pepboys1.png'},
-       {'name': 'Olivia', 'id': 12, 'img':'../../../assets/app/pepboys1.png'}
-    ]
- }
+        names: [
+        {'name1': 'Ben11', 'id': 1, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Ben11'},
+        {'name1': 'Susan', 'id': 2, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Susan'},
+        {'name1': 'Robert', 'id': 3, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Robert'},
+        {'name1': 'Mary', 'id': 4, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Mary'},
+        {'name1': 'Daniel', 'id': 5, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Daniel'},
+        {'name1': 'Laura', 'id': 6, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Laura'},
+        {'name1': 'John', 'id': 7, 'img':require('../../../assets/app/pepboys1.png'),'details': 'John'},
+        {'name1': 'Debra', 'id': 8, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Debra'},
+        {'name1': 'Aron', 'id': 9, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Aron'},
+        {'name1': 'Ann', 'id': 10, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Ann'},
+        {'name1': 'Steve', 'id': 11, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Steve'},
+        {'name1': 'Olivia', 'id': 12, 'img':require('../../../assets/app/pepboys1.png'),'details': 'Olivia'}
+        ]
+    }
+
+    gotoDetailPage=(item)=>{
+        console.log("name in goToDetails Page ..",item);
+
+        Actions.AutoPartsDetails(item)
+    }
 
    return (
             <ScrollView>
@@ -27,8 +33,10 @@ const ListView = () => {
                 {  
                   this.state.names.map((item, index) => (
                      <View key = {item.id} style = {[style.item,style.child]}>
-                        <Image source = {require('../../../assets/app/pepboys1.png')} style={{ width: 125, height: 125, marginLeft: 5}}/>
-                        <Text>{item.name}</Text>
+                        <TouchableOpacity onPress = {() => this.gotoDetailPage(item)}>
+                            <Image source = {require('../../../assets/app/pepboys1.png')} style={{ width: 125, height: 125, marginLeft: 5}}/>
+                            <Text>{item.name1}</Text>
+                        </TouchableOpacity>
                      </View>
                   ))
                }
