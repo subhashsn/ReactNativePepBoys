@@ -1,0 +1,50 @@
+
+Important links
+===============
+
+1. https://www.tutorialspoint.com/react_native/react_native_state.htm
+https://docs.nativebase.io/Components.html#Drawer
+https://facebook.github.io/react-native/docs/network
+
+
+https://www.safaribooksonline.com/library/view/learning-react-native/9781491929049/ch04.html
+
+https://medium.com/@xeuus/react-native-storage-io-do-we-really-have-to-use-asyncstorage-write-your-own-io-bridge-bb14a86b0418
+
+https://reactnativecode.com/custom-json-listview-images-text-api-android-ios/
+
+https://reactnativecode.com/json-flatlist-with-images-and-text/
+
+
+Custom tab bar
+==============
+https://medium.com/@chinmoyeedash/custom-tab-bar-in-react-native-4de77726823c
+https://github.com/chinmoyeedash/HPDF_TwitterApp
+
+https://medium.com/@sxia/how-to-customize-tab-bar-in-react-navigation-a0dc6d4d7e61
+
+
+https://github.com/react-navigation/react-navigation/issues/1720 - Working
+
+
+==================
+
+react-native init reactTutorialApp
+react-native start
+
+npm start
+react-native run-ios
+
+npm install native-base --save
+==================
+
+
+28Aug2018
+=========
+
+1. Reading and fetching the file locally and displaying on the screen - Done
+2. CSS changes
+3. Navigating to another screen when menu items are selected. - Done
+4. How to pass dynamic value to image(Source) -  (Partially done)
+5. Changing the tab bar as different component 
+

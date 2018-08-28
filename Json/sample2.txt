@@ -1,0 +1,107 @@
+Points to Remember in React Native
+==================================
+
+1. BREW : To install node
+2. Node/NPM : Dependency management
+3. Watchman : watches files on the hard drive and waits for them to change
+4. RN CLI : React Native Command Line Interface
+
+Install BREW :
+
+1. Brew.sh
+
+C AwesomeProject
+
+npm install --save react-navigation
+
+
+Commands for running in simulator
+1. React-native start
+2. React-native run-its
+
+ESLint :  To validate Javascript code.
+1. Installing ESLint : npm install -g eslint
+2. Extension : eslint
+3. Rules set: rnpm install --save-dev eslint-config-rallycoding
+4. .eslintrc: { "extends":"rallycoding"}
+
+
+Troubleshootin-react-native-startup
+
+https://rallycoding.com/blog/troubleshooting-react-native-startup/
+
+Application Work flow
+=====================
+
+1. Import a library to help create a component
+2. Create a component
+3. Render it to a device
+
+1. Import statement are from ES6
+2. Component is an object that makes something(like text, image) to display on mobile device.
+3. JSX is a extension to Java script which is used to write help react components. (http//Babel.ljs.io)
+
+Import Destructuring:
+
+Component Nesting : Placing one component inside another component 
+
+FlexBox Layout mechanism:
+
+Prop: Property. By adding prop we are reconfiguring child(header) to get the data in fly.
+State : Whenever we change the state mobile device will render the component itself.Component level state
+
+justifyContent : 'flex-start','flex-end'
+flexDirection: 'column','row'
+
+
+
+==================================
+
+Application Flow
+================
+
+Index.js(AlbumList, Header Component) =>AlbumList => AlbumDetails => Creating Card, CardSection, Button =>Card Component/ CardSection component/ Button component
+
+
+Components
+===========
+
+1. Class based components : State only for class base component. SetState object to set state.
+2. Function based components : Presentation component
+
+
+Horizantal Date Picker
+======================
+
+https://rationalappdev.com/horizontal-calendar-in-react-native/
+
+https://github.com/LS05/react-native-hotizontal-calendar-strip
+
+https://github.com/BugiDev/react-native-calendar-strip
+
+
+GridView
+========
+
+
+FireBase
+========
+Npm install --save firebase
+Firebase.initializeApp()
+
+React-native-router-flux@3.35
+
+scene
+
+
+renderContent
+
+
+react-native run-ios --simulator \"iPhone X\"
+
+
+npm install --save redux react-redux
+
+rightTitle=""
+onRight={()=>{console.log('right!!!')}}
+onRight={()=> Action.employCreate()}
