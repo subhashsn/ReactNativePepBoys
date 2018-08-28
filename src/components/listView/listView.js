@@ -1,9 +1,13 @@
 import React from 'react'
 import { TouchableOpacity, Text, StyleSheet, View ,ScrollView,Image} from 'react-native';
 import { Actions } from 'react-native-router-flux';
+// import autoPartData from '../../../Json/AutoParts.json'
 
 const ListView = () => {
    
+    // json = autoPartData;
+    // console.log("jsonData ..",json);
+    
    state = {
         names: [
         {'name1': 'Ash Trays', 'id': 1, 'img':require('../../../assets/app/ash-trays_thumbnail.jpg'),'details': 'Ben11'},
@@ -19,7 +23,7 @@ const ListView = () => {
         {'name1': 'Vanity Mirror', 'id': 11, 'img':require('../../../assets/app/vanity-mirror_thumbnail.jpg'),'details': 'Steve'},
         {'name1': 'Car Lights', 'id': 12, 'img':require('../../../assets/app/car-lights_thumbnail.jpg'),'details': 'Olivia'}
         ]
-    }
+   }    
 
     gotoDetailPage=(item)=>{
         console.log("name in goToDetails Page ..",item);

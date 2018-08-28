@@ -1,0 +1,8 @@
+{
+        "names": [{
+            "name1": "Ash Trays",
+            "id": 1,
+            "img": "require('../../../assets/app/ash-trays_thumbnail.jpg')",
+            "details": "Ben11"
+        }]
+    }
