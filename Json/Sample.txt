@@ -39,6 +39,8 @@ npm install native-base --save
 ==================
 
 
+===Need to copy node module, install react-native-router-flux and react-navigation=====
+
 28Aug2018
 =========
 
