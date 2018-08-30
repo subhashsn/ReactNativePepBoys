@@ -45,7 +45,7 @@ const FirstActivity_StackNavigator = StackNavigator({
     Second: { 
       screen: ScreenB, 
       navigationOptions: ({ navigation }) => ({
-        title: 'About',
+        title: 'ScreenB',
         headerLeft : <HamburgerIcon navigationProps={ navigation }/>,
         headerStyle: {
           backgroundColor: '#FF9800'

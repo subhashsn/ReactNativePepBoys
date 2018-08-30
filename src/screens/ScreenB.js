@@ -1,11 +1,18 @@
 import React, {Component} from 'react';
-import { Text, View } from 'react-native';
+import { Image, View } from 'react-native';
+import { SecondTab } from '../components/TabBar/SecondTabScreen.js'
 
 class ScreenB extends Component {
   render() {
     return (
-      <View>
-          <Text>Screen B</Text>
+      <View style={{flex: 1}}>
+        <View>
+            <Image
+              source = {require('../../assets/app/pepBoysHeader.jpeg')}
+              style={{ width: 380, height: 115, marginLeft: 5}}
+            />
+        </View>
+        <SecondTab />
       </View>
     );
   }
